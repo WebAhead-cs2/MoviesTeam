@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "./MainPage/filmBox.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>welcome </h3>
+        <div id="main">
+            <div id="film-box">
+                <h1 id="title">${title}</h1>
+                <div id="year-time-box">
+                    <div id="year"> ${year}</div>
+                    <div id="runtime"> ${time} min</div>
+                </div>
+                <div id="genre"><b>${genre}</b></div>
+                <div id="img-story">
+                    <img id="movie-img" width="220px" src="./posters/28later.jpg" alt="">
+                    <div id="story">
+                        Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two hit men 
+                        who are out to retrieve a suitcase stolen from their employer, 
+                        mob boss Marsellus Wallace (Ving Rhames). Wallace has also asked 
+                        Vincent to take his wife Mia (Uma Thurman) out a few days later when 
+                        Wallace himself will be out of town. Butch Coolidge (Bruce Willis) is 
+                        an aging boxer who is paid by Wallace to lose his fight. The lives of 
+                        these seemingly unrelated people are woven together comprising of a 
+                        series of funny, bizarre and uncalled-for incidents.
+                    </div>
+                </div>
+                <div class="info-dw">
+                    <span><b>Director</b></span>
+                    <span>${director}</span>
+                </div>
+                <div class="info-dw">
+                    <span><b>Writer</b></span>
+                    <span>${writer}</span>
+                </div>
+        
+                <div style="margin-bottom: 5px;"><b>reviews</b></div>
+                <div>
+                    <a href=""><button></button></a>
+                </div>
+                <div id="movie-reviews-box"> 
+                    <div id="users-reviews">
+                        <span class="retrieved-reviews">great movie , nice to watch it..</span>
+                        <span class="retrieved-reviews">it is a dramatic film just wow!</span>
+                        <span class="retrieved-reviews">naaa I hate it :@</span>
+                    </div>
+                </div>
+                
+            </div>
+            <form id="review-box" method="post">
+                <div id="q-to-user"><b>what do you think about this movie?</b></div>
+                <textarea name="" id="user-rev" required  rows="8" placeholder="Leave a review ..."></textarea>
+                <button id="save-review-btn" type="submit">save your review</button>
+            </form>
+        </div>
+    </body>
+    <script src="./MainPage/index.js"></script>
+    </html>

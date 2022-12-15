@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const handlers = require('./handlers');
-const db = require('./database/connection');
 
 router.get('/', handlers.home);
 router.get('/login', handlers.login);

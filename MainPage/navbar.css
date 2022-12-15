@@ -1,0 +1,58 @@
+.Menu {
+    overflow: hidden;
+    background-color: rgb(39, 168, 174)
+}
+
+.Menu a {
+    float: left;
+    display: block;
+    color: #00125c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Menu a:hover {
+    background-color: rgb(155, 243, 241);
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.Menu .icon {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .Menu a:not(:first-child) {
+        display: none;
+    }
+
+    .Menu a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Menu.responsive {
+        position: relative;
+    }
+
+    .Menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .Menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

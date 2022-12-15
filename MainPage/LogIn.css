@@ -7,33 +7,52 @@ body {
 
 .container {
     width: 60%;
-    padding-top: 50px;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
+#title{
+    text-align: center;
+}
+
 .info {
-    width: 90%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     padding-bottom: 150px;
     background: #EFF5F5;
     color: #1382fa;
+    font-weight: bold;
     white-space: 20;
+}
+
+#inputs-img{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #username , #pass{
     display: block;
     padding: 8px;
-    width: 200px;
+    width: 250px;
+    margin-bottom: 10px;
+    
+    
 }
 #loginBtn{
     display: block;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     background-color: black;
     color: #eff5f5;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
+}
+img{
+    width:40%;
+    margin-left: 120px;
 }
 
 #q-signup{

@@ -1,21 +1,13 @@
 
-// document.getElementById('save-review-btn').addEventListener('click', () =>{
-//     const node = document.getElementById('film-box');
-//     const clone = node.cloneNode(true);
-//     document.body.appendChild(clone);
-// });
+document.getElementById('save-review-btn').addEventListener('click', () => {
+    document.querySelector('textarea').value = '';
+    document.querySelector('textarea').placeholder = 'Leave a review ...';
+});
 
-// for(let i = 1; i<=17; i++){
-//     const node = document.getElementById('main');
-//     const clone = node.cloneNode(true);
-//     document.body.appendChild(clone);
-// }
 
-//let id ;
-// function returnId(idParam){
-//     console.log('I am form returnId Func >>> ' + id);
-//     return idParam;
-// }
 
-// module.exports ={returnId};
+document.getElementById('loginBtn').addEventListener('click', () => {
+    document.getElementById('username').innerHTML=''
+    document.getElementById('pass').innerHTML = '';
+});
 

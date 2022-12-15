@@ -5,17 +5,25 @@ body {
 
 .container {
     width: 60%;
-    padding-top: 50px;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
+#inputs-img{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .info {
-    width: 90%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     padding-bottom: 150px;
     background: #EFF5F5;
     color: #1382fa;
+    font-weight: bold;
     white-space: 20;
 }
 
@@ -23,12 +31,18 @@ body {
 #pass , #username, #email {
     display: block;
     padding: 8px;
-    width: 200px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+img{
+    width:40%;
+    margin-left: 120px;
 }
 
 #signupBtn{
     display: block;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     background-color: black;
     color: #eff5f5;
